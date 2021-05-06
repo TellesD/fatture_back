@@ -13,6 +13,7 @@ class Place extends Model {
       address_numb: DataTypes.STRING,
       city: DataTypes.STRING,
       number: DataTypes.STRING,
+      fantasy_name: DataTypes.STRING,
     }, {
       sequelize,
     });

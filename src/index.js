@@ -1,10 +1,12 @@
 import express from 'express';
 import routes from './routes';
 import mongoose from 'mongoose';
-
+import cors from 'cors';
 require('./database');
 
 const app = express();
+
+app.use(cors())
 
 //mongodb+srv://admin:NKjq7IzITfDw0IG@cluster0.fvie9.mongodb.net/<dbname>?retryWrites=true&w=majority
 
